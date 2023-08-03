@@ -5,3 +5,8 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 ## delete notifications
 <leader>un
+
+## telescope
+Up/Down C-u C-d
+
+Select files with tab and open quicklist with A-q
