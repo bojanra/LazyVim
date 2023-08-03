@@ -39,6 +39,9 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
+-- Save file
+vim.keymap.set("n", "<leader>w", "<cmd>w<cr>", { noremap = true, desc = "Save window" })
+
 vim.filetype.add({
   pattern = {
     [".*%.html%.ep"] = "html",
@@ -49,11 +52,11 @@ vim.opt.title = true
 vim.opt.titlestring = [[%f %h%m%r%w %{v:progname} (%{tabpagenr()} of %{tabpagenr('$')})]]
 -- vim.cmd("set nospell")
 
-vim.g.tokyodark_transparent_background = false
-vim.g.tokyodark_enable_italic_comment = true
-vim.g.tokyodark_enable_italic = true
-vim.g.tokyodark_color_gamma = "1.0"
-vim.cmd("colorscheme tokyonight-storm")
+-- vim.g.tokyodark_transparent_background = false
+-- vim.g.tokyodark_enable_italic_comment = true
+-- vim.g.tokyodark_enable_italic = true
+-- vim.g.tokyodark_color_gamma = "1.0"
+-- vim.cmd("colorscheme tokyonight-storm")
 
 require("lualine").setup({
   tabline = {
