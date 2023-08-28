@@ -1,11 +1,11 @@
 return {
-  { "rebelot/kanagawa.nvim" },
-  { "tiagovla/tokyodark.nvim" },
+  { "rebelot/kanagawa.nvim", lazy = true },
+  { "tiagovla/tokyodark.nvim", lazy = true },
   { "catppuccin/nvim", lazy = true, name = "catppuccin" },
   {
     -- https://github.com/projekt0n/github-nvim-theme
     "projekt0n/github-nvim-theme",
-    -- lazy = false, -- make sure we load this during startup if it is your main colorscheme
+    lazy = true,
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       require("github-theme").setup({
@@ -21,9 +21,8 @@ return {
     end,
   },
   {
-    --
     "Mofiqul/vscode.nvim",
-    -- lazy = false,
+    lazy = true,
     config = function()
       require("vscode").setup({
         style = "light",
@@ -40,7 +39,7 @@ return {
   {
     -- https://github.com/marko-cerovac/material.nvim
     "marko-cerovac/material.nvim",
-    -- lazy = false,   -- uncomment
+    lazy = true,
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       require("material").setup({

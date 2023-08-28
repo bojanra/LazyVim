@@ -10,3 +10,7 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 Up/Down C-u C-d
 
 Select files with tab and open quicklist with A-q
+
+## insert date
+
+r ! date +\#\#\ \%Y-\%m-\%d\ \%H:\%M

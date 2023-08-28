@@ -12,8 +12,8 @@ vim.opt.titlestring = [[%f %h%m%r%w %{v:progname} (%{tabpagenr()} of %{tabpagenr
 -- vim.cmd("set nospell")
 
 -- vim.cmd("colorscheme tokyonight-storm")
-vim.cmd("colorscheme vscode")
--- vim.cmd("colorscheme kanagawa-wave")
+-- vim.cmd("colorscheme vscode")
+vim.cmd("colorscheme kanagawa-wave")
 
 require("lualine").setup({
   tabline = {

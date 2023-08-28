@@ -9,6 +9,7 @@ local keymap = vim.api.nvim_set_keymap
 keymap("i", "hh", "=>", opts)
 keymap("i", "kk", "->", opts)
 keymap("i", "kkk", "->{}<ESC>i", opts)
+-- keymap("i", "ddd", '<Esc>:r ! date +"\\#\\# \\%Y-\\%m-\\%d \\%H:\\%M" <CR>', opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
