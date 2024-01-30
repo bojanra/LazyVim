@@ -4,6 +4,8 @@ require("config.lazy")
 vim.filetype.add({
   pattern = {
     [".*%.html%.ep"] = "html",
+    [".*%.tt"] = "html",
+    [".*%.md"] = "markdown",
   },
 })
 
