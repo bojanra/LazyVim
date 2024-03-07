@@ -33,3 +33,16 @@ keymap("v", "p", '"_dP', opts)
 
 -- Save file
 -- keymap("n", "<leader>w", "<cmd>w<cr>", opts)
+local function toggle_list()
+  if vim.opt.list:get() then
+    vim.cmd("setlocal nolist")
+    vim.cmd("IBLDisable")
+    vim.b.miniindentscope_disable = true
+  else
+    vim.cmd("setlocal list")
+    vim.cmd("IBLEnable")
+    vim.b.miniindentscope_disable = false
+  end
+end
+
+vim.keymap.set("n", "<leader>um", toggle_list, { desc = "Toggle listchars" })

@@ -6,7 +6,7 @@ return {
     },
   },
   config = function()
-    local supported_filetypes = { "typescriptreact", "svelte" }
+    local supported_filetypes = { "html", "svelte" }
     local augroup = vim.api.nvim_create_augroup("DeliberateEntryPoint", { clear = true })
     vim.api.nvim_create_autocmd({ "FileType" }, {
       pattern = supported_filetypes,

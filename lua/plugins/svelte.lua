@@ -1,7 +1,6 @@
 return {
   {
     "leafOfTree/vim-svelte-plugin",
-    config = function(
-) end,
+    config = function() end,
   },
 }

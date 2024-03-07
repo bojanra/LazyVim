@@ -36,19 +36,4 @@ return {
       -- vim.cmd("colorscheme vscode")
     end,
   },
-  {
-    -- https://github.com/marko-cerovac/material.nvim
-    "marko-cerovac/material.nvim",
-    lazy = true,
-    priority = 1000, -- make sure to load this before all the other start plugins
-    config = function()
-      require("material").setup({
-        high_visibility = {
-          lighter = true, -- Enable higher contrast text for lighter style
-          darker = true, -- Enable higher contrast text for darker style
-        },
-      })
-      -- vim.cmd("colorscheme material-lighter")
-    end,
-  },
 }

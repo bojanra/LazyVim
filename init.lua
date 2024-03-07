@@ -1,6 +1,12 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
+-- Colorscheme izbereš tako, da daš pri modulu lazy na false in
+-- ga izbereš s commando spodaj
+-- vim.cmd("colorscheme catppuccin")
+-- vim.cmd("colorscheme vscode")
+-- vim.cmd("colorscheme tokyodark")
+
 vim.filetype.add({
   pattern = {
     [".*%.html%.ep"] = "html",
@@ -11,11 +17,9 @@ vim.filetype.add({
 
 vim.opt.title = true
 vim.opt.titlestring = [[%f %h%m%r%w %{v:progname} (%{tabpagenr()} of %{tabpagenr('$')})]]
--- vim.cmd("set nospell")
 
--- vim.cmd("colorscheme tokyonight-storm")
--- vim.cmd("colorscheme vscode")
-vim.cmd("colorscheme kanagawa-wave")
+local neogit = require("neogit")
+neogit.setup({})
 
 require("lualine").setup({
   tabline = {
@@ -37,6 +41,7 @@ local source_mapping = {
   luasnip = "[Lua]",
   cmp_tabnine = "[TN]",
   path = "[Path]",
+  vim_dadbod_completion = "[DB]",
 }
 
 require("cmp").setup({
