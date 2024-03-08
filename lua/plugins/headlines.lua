@@ -42,6 +42,7 @@ return {
           fat_headline_upper_string = "▃",
           fat_headline_lower_string = "-",
           --
+          bullets = { "➊ ", "➋ ", "➌ ", "➍ ", "➎ ", "➏ " },
           headline_highlights = {
             "Headline1",
             "Headline2",
