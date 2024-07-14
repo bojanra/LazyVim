@@ -3,6 +3,15 @@ return {
   { "tiagovla/tokyodark.nvim", lazy = true },
   { "catppuccin/nvim", lazy = true, name = "catppuccin" },
   {
+    "navarasu/onedark.nvim",
+    lazy = true,
+    config = function()
+      require("onedark").setup({
+        style = "deep",
+      })
+    end,
+  },
+  {
     -- https://github.com/projekt0n/github-nvim-theme
     "projekt0n/github-nvim-theme",
     lazy = true,

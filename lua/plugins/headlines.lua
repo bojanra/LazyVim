@@ -9,8 +9,8 @@ return {
     dependencies = "nvim-treesitter/nvim-treesitter",
     config = function()
       -- Define custom highlight groups using Vimscript
-      vim.cmd([[highlight Headline1 guibg=#7e0000 guifg=white]])
-      vim.cmd([[highlight Headline2 guibg=#a56106 guifg=white]])
+      vim.cmd([[highlight Headline1 guibg=#ffff00 guifg=black]])
+      vim.cmd([[highlight Headline2 guibg=#7e0000 guifg=white]])
       vim.cmd([[highlight Headline3 guibg=#295715 guifg=white]])
       vim.cmd([[highlight Headline4 guibg=#1e0b7b guifg=white]])
       vim.cmd([[highlight Headline5 guibg=#560b7b guifg=white]])

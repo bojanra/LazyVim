@@ -6,6 +6,13 @@ require("config.lazy")
 -- vim.cmd("colorscheme catppuccin")
 -- vim.cmd("colorscheme vscode")
 -- vim.cmd("colorscheme tokyodark")
+vim.cmd("colorscheme onedark")
+-- vim.cmd("colorscheme github_dark_dimmed")
+--
+--  git fetch --tags
+--  git checkout nightly
+
+-- vim.g.lazygit_theme = false
 
 vim.filetype.add({
   pattern = {
