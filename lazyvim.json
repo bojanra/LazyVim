@@ -1,9 +1,9 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.coding.tabnine"
+    "lazyvim.plugins.extras.ai.tabnine"
   ],
   "news": {
-    "NEWS.md": "6077"
+    "NEWS.md": "7429"
   },
-  "version": 6
+  "version": 7
 }
