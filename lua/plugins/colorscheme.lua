@@ -1,13 +1,30 @@
+-- here define colorscheme and select them
 return {
-  { "rebelot/kanagawa.nvim", lazy = true },
   { "tiagovla/tokyodark.nvim", lazy = true },
-  { "catppuccin/nvim", lazy = true, name = "catppuccin" },
+  { "ellisonleao/gruvbox.nvim" },
   {
     "navarasu/onedark.nvim",
     lazy = true,
     config = function()
       require("onedark").setup({
-        style = "deep",
+        -- Main options --
+        style = "darker", -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
+        transparent = true, -- Show/hide background
+
+        -- toggle theme style ---
+        toggle_style_key = nil, -- "<leader>ts",
+        toggle_style_list = { "dark", "darker", "cool", "deep", "warm", "warmer", "light" }, -- List of styles to toggle between
+
+        -- Change code style ---
+        -- Options are italic, bold, underline, none
+        -- You can configure multiple style with comma separated, For e.g., keywords = 'italic,bold'
+        code_style = {
+          comments = "italic",
+          keywords = "none",
+          functions = "bold",
+          strings = "none",
+          variables = "none",
+        },
       })
     end,
   },
@@ -34,7 +51,7 @@ return {
     lazy = true,
     config = function()
       require("vscode").setup({
-        style = "light",
+        style = "dark",
 
         -- Enable italic comment
         italic_comments = true,
@@ -44,5 +61,16 @@ return {
       })
       -- vim.cmd("colorscheme vscode")
     end,
+  },
+  -- Configure LazyVim
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      -- colorscheme = "gruvbox",
+      -- colorscheme = "tokyodark",
+      colorscheme = "onedark",
+      -- colorscheme = "vscode",
+      -- colorscheme = "tokyonight",
+    },
   },
 }
